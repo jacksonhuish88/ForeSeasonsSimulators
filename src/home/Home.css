@@ -1,0 +1,105 @@
+.navbar {
+  background-color: #1e191a;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  color: white;
+  height: 100px;
+  width: auto;
+}
+
+.navbar img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100px;
+}
+
+.navbar div {
+  display: inline-block;
+  position: flex;
+  margin: 75px 25px 0px 0px;
+}
+
+.navbar div:hover {
+  color: rgb(53, 129, 58);
+}
+
+.missionStatement {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.missionStatement div {
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+}
+
+.genInfo div {
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+}
+
+.viewSimulators {
+  padding: 10px 10px 10px 10px;
+}
+
+.getQuote {
+  padding: 10px 10px 10px 10px;
+}
+
+.getQuote form {
+  background-color: #1e191a;
+  color: white;
+  width: 400px;
+  padding: 2px 2px 2px 2px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0 auto;
+}
+
+.getQuote p {
+  margin-top: -10px;
+}
+
+.getQuote label {
+  padding: 10px 15px;
+  margin-left: -50px;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+}
+
+.getQuote input {
+  width: 225px;
+  height: 25px;
+  text-align: left;
+  display: inline-block;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.getQuote textarea {
+  padding: 10px 25px 0px 25px;
+  display: inline-block;
+  width: 325px;
+  height: 200px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.email-btn {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+}
+
+.email-btn:hover {
+  cursor: pointer;
+  background-color: rgb(53, 129, 58);
+  color: white;
+}
