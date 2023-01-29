@@ -5,9 +5,7 @@ import Home from "./home/Home";
 function App() {
   return (
     <div className="App">
-      <body>
-        <Home></Home>
-      </body>
+      <Home></Home>
     </div>
   );
 }

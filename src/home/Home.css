@@ -5,14 +5,18 @@
   justify-content: right;
   color: white;
   height: 100px;
-  width: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar img {
   position: absolute;
   left: 0px;
-  top: 0px;
-  height: 100px;
+  top: 12px;
+  height: 80px;
+  padding-left: 20px;
 }
 
 .navbar div {
@@ -101,5 +105,11 @@
 .email-btn:hover {
   cursor: pointer;
   background-color: rgb(53, 129, 58);
+  border: solid black;
   color: white;
+}
+
+body {
+  overflow: auto;
+  padding-top: 50px; /* height of the navbar */
 }

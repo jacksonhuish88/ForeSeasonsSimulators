@@ -1,7 +1,8 @@
 import React from "react";
-import Logo from "./Logo.png";
-import "../App.css";
-import "./Home.css";
+import Logo from "../Logo.png";
+import "../../App.css";
+import "../Home.css";
+import "../../bootstrap-grid.css";
 
 function Navigation() {
   return (
