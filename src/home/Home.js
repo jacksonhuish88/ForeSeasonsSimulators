@@ -6,16 +6,18 @@ import Mission from "./components/Mission";
 import GenInfo from "./components/GenInfo";
 import Simulators from "./components/Simulators";
 import Quote from "./components/Quote";
+import Footer from "./components/Footer";
 
 function Home() {
   return (
     <>
-      <NavBar></NavBar>
       <body>
-        <Mission></Mission>
-        <GenInfo></GenInfo>
-        <Simulators></Simulators>
-        <Quote></Quote>
+        <NavBar></NavBar>
+        <div class="wrapper">
+          <Mission></Mission>
+          <GenInfo></GenInfo>
+          <Quote></Quote>
+        </div>
       </body>
     </>
   );

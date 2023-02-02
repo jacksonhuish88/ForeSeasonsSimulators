@@ -6,26 +6,16 @@ import "../../bootstrap-grid.css";
 function Mission() {
   return (
     <>
-      <div className="missionStatement">
-        <div className="row">
-          <div
-            className="col-3 col-sm-12"
-            style={{
-              fontWeight: "bold",
-              textAlign: "center",
-              fontSize: "28px",
-            }}
-          >
-            Our Mission
-          </div>
-          <div className="col-8 col-sm-12">
+      <section className="one">
+        <div className="content fade-in">
+          <h1>Our Mission</h1>
+          <p class="subheading">
             Here at Fore Seasons Golf we take pride in making our simulator set
             ups fit your space and your budget –
             <span style={{ fontWeight: "bold" }}> NOT</span> the other way
-            around.
-          </div>
+          </p>
         </div>
-      </div>
+      </section>
     </>
   );
 }

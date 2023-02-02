@@ -1,4 +1,4 @@
-.navbar {
+nav {
   background-color: #1e191a;
   display: flex;
   align-items: right;
@@ -6,12 +6,14 @@
   color: white;
   height: 100px;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
+  box-shadow: 4px 0px 12px 12px #000000;
 }
 
-.navbar img {
+nav img {
   position: absolute;
   left: 0px;
   top: 12px;
@@ -19,97 +21,181 @@
   padding-left: 20px;
 }
 
-.navbar div {
+nav div {
   display: inline-block;
   position: flex;
   margin: 75px 25px 0px 0px;
 }
 
-.navbar div:hover {
+nav div:hover {
   color: rgb(53, 129, 58);
 }
 
-.missionStatement {
-  text-align: left;
-  margin-top: 15px;
+.carousel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.missionStatement div {
-  padding: 10px 10px 10px 10px;
-  font-size: 20px;
-}
-
-.genInfo div {
-  text-align: left;
-  padding: 10px 10px 10px 10px;
-}
-
-.viewSimulators {
-  padding: 10px 10px 10px 10px;
-}
-
-.getQuote {
-  padding: 10px 10px 10px 10px;
-}
-
-.getQuote form {
-  background-color: #1e191a;
-  color: white;
-  width: 400px;
-  padding: 2px 2px 2px 2px;
-  border-radius: 5px 5px 5px 5px;
-  margin: 0 auto;
-}
-
-.getQuote p {
-  margin-top: -10px;
-}
-
-.getQuote label {
-  padding: 10px 15px;
-  margin-left: -50px;
-  text-align: left;
-  display: inline-block;
+.carousel-wrapper {
+  display: flex;
+  width: 100%;
   position: relative;
 }
 
-.getQuote input {
-  width: 225px;
-  height: 25px;
-  text-align: left;
-  display: inline-block;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.carousel-content-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-.getQuote textarea {
-  padding: 10px 25px 0px 25px;
-  display: inline-block;
-  width: 325px;
-  height: 200px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.carousel-content {
+  display: flex;
+  transition: all 250ms linear;
+  -ms-overflow-style: none; /* hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* hide scrollbar in Firefox */
 }
 
-.email-btn {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-style: italic;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100px;
-  height: 35px;
-  text-align: center;
+/* hide scrollbar in webkit browser */
+.carousel-content::-webkit-scrollbar,
+.carousel-content::-webkit-scrollbar {
+  display: none;
 }
 
-.email-btn:hover {
-  cursor: pointer;
-  background-color: rgb(53, 129, 58);
-  border: solid black;
+.carousel-content > * {
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+/* New Styles Here */
+body {
+  margin: 0px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  max-width: 800px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one {
+  background-color: #1e191a;
+}
+
+.fade-in {
+  position: relative;
+  z-index: 0;
+  opacity: 1;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 100px;
+  margin: 0;
   color: white;
 }
 
-body {
-  overflow: auto;
-  padding-top: 50px; /* height of the navbar */
+.subheading {
+  font-size: 24px;
+  color: white;
+}
+
+.one form {
+  background-color: white;
+  padding: 35px 35px 35px 35px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 4px 0px 18px 18px #000000;
+  text-align: left;
+}
+
+.one form h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.one form p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.one label {
+  font-size: 22px;
+  padding-right: 10px;
+  text-align: right;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 18px;
+}
+
+.one input {
+  height: 25px;
+  width: 300px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.one textarea {
+  display: flex;
+  margin-top: 12px;
+  width: 100%;
+  height: 100px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.one button {
+  width: 25%;
+  align-items: right;
+  height: 28px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.two {
+  background: linear-gradient(99deg, #086c44 50%, #ffffff calc(50% + 1px));
+  height: 100vh;
+  width: 100vw;
+}
+
+.two h1 {
+  color: #1e191a;
+  font-size: 80px;
+}
+
+.two p.subheading {
+  color: #1e191a;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #1e191a;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }

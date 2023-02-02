@@ -7,12 +7,12 @@ import "../../bootstrap-grid.css";
 function Navigation() {
   return (
     <>
-      <div className="navbar">
+      <nav>
         <img src={Logo} alt="Logo" />
         <div>Simulators</div>
         <div>Quotes</div>
         <div>About Us</div>
-      </div>
+      </nav>
     </>
   );
 }
