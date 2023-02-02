@@ -3,8 +3,8 @@ import "../App.css";
 import "./Home.css";
 import NavBar from "./components/NavBar";
 import Mission from "./components/Mission";
-import GenInfo from "./components/GenInfo";
-import Simulators from "./components/Simulators";
+import Installation from "./components/Installation";
+import Included from "./components/Included";
 import Quote from "./components/Quote";
 import Footer from "./components/Footer";
 
@@ -13,9 +13,10 @@ function Home() {
     <>
       <body>
         <NavBar></NavBar>
-        <div class="wrapper">
+        <div className="wrapper">
           <Mission></Mission>
-          <GenInfo></GenInfo>
+          <Installation></Installation>
+          <Included></Included>
           <Quote></Quote>
         </div>
       </body>

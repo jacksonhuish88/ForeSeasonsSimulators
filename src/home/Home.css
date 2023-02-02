@@ -71,6 +71,7 @@ nav div:hover {
 /* New Styles Here */
 body {
   margin: 0px;
+  padding: 0px;
 }
 
 .wrapper {
@@ -174,20 +175,95 @@ h1 {
   font-weight: bold;
 }
 
+/* Section TWO and THREE */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.item {
+  margin-top: calc(48%);
+  padding: 25px;
+}
+
 .two {
-  background: linear-gradient(99deg, #086c44 50%, #ffffff calc(50% + 1px));
+  background: linear-gradient(-99deg, #ffffff 50%, #086c44 calc(50% + 1px));
   height: 100vh;
   width: 100vw;
 }
 
 .two h1 {
-  color: #1e191a;
+  color: #ffffff;
   font-size: 80px;
 }
 
 .two p.subheading {
+  color: #ffffff;
+}
+
+.three {
+  background: linear-gradient(99deg, #086c44 50%, #ffffff calc(50% + 1px));
+  height: 100vh;
+  width: 100vw;
+}
+
+.three h1 {
+  color: #1e191a;
+  font-size: 80px;
+}
+
+.three p.subheading {
   color: #1e191a;
 }
+
+.from-left {
+  grid-column: 2/3;
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3 /4;
+  transform: translateX(50%);
+}
+
+.from-left-slide {
+  animation-duration: 1.5s;
+  animation-name: from-left;
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.from-right-slide {
+  animation: from-right 1.5s ease-in-out;
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+@keyframes from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* FOOTER STYLING */
 
 footer {
   position: fixed;
