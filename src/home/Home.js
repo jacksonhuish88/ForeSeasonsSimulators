@@ -17,6 +17,7 @@ function Home() {
         <Mission></Mission>
         <Installation></Installation>
         <Included></Included>
+        <Footer></Footer>
       </body>
     </>
   );

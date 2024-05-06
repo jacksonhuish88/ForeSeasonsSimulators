@@ -2,6 +2,11 @@ img {
   border-radius: 10px 10px 10px 10px;
 }
 
+.text-center{
+  padding-left:25px;
+  padding-right:25px
+}
+
 /* ------------ */
 /* NAVBAR CSS */
 /* ------------ */
@@ -66,10 +71,10 @@ img {
 /* MISSION CSS */
 /* ------------ */
 .container-mission {
-  padding: 20px; /* Adequate padding around the content */
+  padding: 30px; /* Adequate padding around the content */
   background-color: #1e191a; /* Set a fixed background color */
   color: white;
-  height:50vh;
+  height:75vh;
   display: flex; /* Enables Flexbox */
   flex-direction: column; /* Stacks children vertically */
   justify-content: center; /* Centers content vertically */
@@ -132,7 +137,7 @@ img {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height:42vh;
+  height:50vh;
 }
 
 /* Styles for the left column with green background */
@@ -175,7 +180,7 @@ img {
 
 .carousel-image {
   max-width: auto;
-  height: 38vh;
+  max-height: 38vh;
   margin: 0 auto; /* Center images horizontally */
   padding: 0px;
 }
@@ -211,3 +216,28 @@ img {
   right: 15% !important; /* Adjust distance from left side */
 }
 
+/* ------------ */
+/* FOOTER CSS */
+/* ------------ */
+footer{
+  background-color: #1e191a;
+  color:white;
+  padding-top:12px;
+  padding-bottom:12px;
+}
+
+footer a{
+  color:white;
+  text-decoration: none;
+}
+
+footer .foot-overview-title{
+  margin-top:5px;
+  text-decoration: none;
+  margin-bottom:5px;
+}
+
+footer .footer-about{
+  margin-top:12px;
+  text-decoration: none;
+}

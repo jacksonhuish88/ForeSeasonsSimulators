@@ -9,7 +9,7 @@ function Installation() {
       <div className="row">
         <div className="col-12 col-md-5 installation-left">
           <div className="text-center">
-              <img src={simulator} alt="Simulator Installation" style={{ maxWidth: 'auto', height: '38vh' }}/>
+              <img src={simulator} alt="Simulator Installation" style={{ maxWidth: 'auto', maxHeight: '38vh' }}/>
             </div>
         </div>
         <div className="col-12 col-md-7 installation-right">
