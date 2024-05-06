@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/ForeSeasonsSimulators/static/css/main.5f739afa.css",
-    "main.js": "/ForeSeasonsSimulators/static/js/main.280ef1e3.js",
+    "main.css": "/ForeSeasonsSimulators/static/css/main.4f6cf3f9.css",
+    "main.js": "/ForeSeasonsSimulators/static/js/main.3e3a9671.js",
     "static/js/787.28cb0dcd.chunk.js": "/ForeSeasonsSimulators/static/js/787.28cb0dcd.chunk.js",
     "static/media/sim_1.png": "/ForeSeasonsSimulators/static/media/sim_1.247a7860e1bb0617b227.png",
+    "static/media/car_4.png": "/ForeSeasonsSimulators/static/media/car_4.efe27133aa4096c03455.png",
     "static/media/Logo.png": "/ForeSeasonsSimulators/static/media/Logo.342c19cca95b14fd5b38.png",
     "static/media/car_3.jpg": "/ForeSeasonsSimulators/static/media/car_3.45f412e83eb08b75f55f.jpg",
     "static/media/car_1.jpg": "/ForeSeasonsSimulators/static/media/car_1.fb4ab1b87723d9102e3c.jpg",
@@ -13,12 +14,12 @@
     "static/media/slick.ttf": "/ForeSeasonsSimulators/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/ForeSeasonsSimulators/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ForeSeasonsSimulators/index.html",
-    "main.5f739afa.css.map": "/ForeSeasonsSimulators/static/css/main.5f739afa.css.map",
-    "main.280ef1e3.js.map": "/ForeSeasonsSimulators/static/js/main.280ef1e3.js.map",
+    "main.4f6cf3f9.css.map": "/ForeSeasonsSimulators/static/css/main.4f6cf3f9.css.map",
+    "main.3e3a9671.js.map": "/ForeSeasonsSimulators/static/js/main.3e3a9671.js.map",
     "787.28cb0dcd.chunk.js.map": "/ForeSeasonsSimulators/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f739afa.css",
-    "static/js/main.280ef1e3.js"
+    "static/css/main.4f6cf3f9.css",
+    "static/js/main.3e3a9671.js"
   ]
 }
