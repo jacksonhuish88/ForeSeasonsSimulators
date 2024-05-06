@@ -35,22 +35,30 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Info */}
-                    <div className="col-md-3 text-center">
+                    <div className="col-md-3">
                       <h5 className="foot-overview-title">Contact</h5>
-                      <div className="footer-brand d-flex align-items-center">
-                          <i style={{ fontSize: '1.5rem' }} className="fa-solid fa-sm fa-envelope text-white me-2"></i>
-                          <p style={{ margin: 0 }}><a href="mailto:foreseasonssimulators@gmail.com">foreseasonssimulators@gmail.com</a></p>
-                      </div>
-                      <div className="footer-brand d-flex align-items-center">
-                          <i style={{ fontSize: '1.5rem' }} className="fa-solid fa-sm fa-phone text-white me-2"></i>
-                          <p style={{ margin: 0 }}><a href="tel:">123-123-1234</a></p>
-                      </div>
-                      <div className="footer-brand d-flex align-items-center">
-                          <a href="https://www.instagram.com/fore.seasons.golf" target="_blank">
-                              <i className="fab fa-instagram text-white fa-xl me-2"></i>
-                          </a>
-                          <p style={{ margin: 0 }}>Instagram</p>
-                      </div>
+                      <ul className="list-unstyled">
+                            <li>                      
+                              <div className="footer-brand d-flex align-items-center">
+                                <i style={{ fontSize: '1.5rem' }} className="fa-solid fa-sm fa-envelope text-white me-2"></i>
+                                <p style={{ margin: 0 }}><a href="mailto:foreseasonssimulators@gmail.com">foreseasonssimulators@gmail.com</a></p>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="footer-brand d-flex align-items-center">
+                                <i style={{ fontSize: '1.5rem' }} className="fa-solid fa-sm fa-phone text-white me-2"></i>
+                                <p style={{ margin: 0 }}><a href="tel:">123-123-1234</a></p>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="footer-brand d-flex align-items-center">
+                                  <a href="https://www.instagram.com/fore.seasons.golf" target="_blank">
+                                      <i className="fab fa-instagram text-white fa-xl me-2"></i>
+                                  </a>
+                                  <p style={{ margin: 0 }}>Instagram</p>
+                              </div>
+                            </li>
+                      </ul>
                   </div>
                 </div>
             </div>

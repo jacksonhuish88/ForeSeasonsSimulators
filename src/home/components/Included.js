@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import car1 from "../components/img/car_1.jpg";
 import car2 from "../components/img/car_2.jpg";
 import car3 from "../components/img/car_3.jpg";
+import car4 from "../components/img/car_4.png";
 
 function Installation() {
   const settings = {
@@ -37,6 +38,7 @@ function Installation() {
               <div><img src={car1} alt="Car 1" className="carousel-image"/></div>
               <div><img src={car2} alt="Car 2" className="carousel-image"/></div>
               <div><img src={car3} alt="Car 3" className="carousel-image"/></div>
+              <div><img src={car4} alt="Car 4" className="carousel-image"/></div>
             </Slider>
           </div>
         </div>
