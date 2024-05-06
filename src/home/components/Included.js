@@ -32,7 +32,7 @@ function Installation() {
   return (
     <section className="container-fluid">
       <div className="row">
-        <div className="col-12 col-md-5 installation-left">
+        <div className="col-12 col-md-6 installation-left">
           <div className="text-center">
             <Slider {...settings} className="carousel-slider">
               <div><img src={car1} alt="Car 1" className="carousel-image"/></div>
@@ -42,7 +42,7 @@ function Installation() {
             </Slider>
           </div>
         </div>
-        <div className="col-12 col-md-7 installation-right">
+        <div className="col-12 col-md-6 installation-right">
           <div className="text-center">
             <h1 style={{ fontSize: '36px' }}>What's Included</h1>
             <p style={{ fontSize: '18px' }}>
