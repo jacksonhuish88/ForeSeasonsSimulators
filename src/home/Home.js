@@ -8,17 +8,15 @@ import Included from "./components/Included";
 import Quote from "./components/Quote";
 import Footer from "./components/Footer";
 
+
 function Home() {
   return (
     <>
       <body>
         <NavBar></NavBar>
-        <div className="wrapper">
-          <Mission></Mission>
-          <Installation></Installation>
-          <Included></Included>
-          <Quote></Quote>
-        </div>
+        <Mission></Mission>
+        <Installation></Installation>
+        <Included></Included>
       </body>
     </>
   );

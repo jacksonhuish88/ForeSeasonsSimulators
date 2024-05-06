@@ -1,8 +1,14 @@
-nav {
-  background-color: #1e191a;
+img {
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* ------------ */
+/* NAVBAR CSS */
+/* ------------ */
+.navbar {
+  background-color: #1e191a; /* Dark background for navbar */
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: center; /* Center items vertically */
   color: white;
   height: 100px;
   position: fixed;
@@ -10,268 +16,198 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 4px 0px 12px 12px #000000;
+  box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
 }
 
-nav img {
-  position: absolute;
-  left: 0px;
-  top: 12px;
-  height: 80px;
-  padding-left: 20px;
+/* Logo Styling */
+.navbar-brand img {
+  height: 75px; /* Fixed height for the logo */
 }
 
-nav div {
-  display: inline-block;
-  position: flex;
-  margin: 75px 25px 0px 0px;
+/* Navigation Link Styling */
+.navbar-nav .nav-link {
+  color: white; /* Ensures nav links are white */
+  margin-right: 25px; /* Right margin for spacing between links */
 }
 
-nav div:hover {
-  color: rgb(53, 129, 58);
+.navbar-nav .nav-link:hover {
+  color: rgb(53, 129, 58); /* Green color on hover for links */
 }
 
-.carousel-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+/* Media query for mobile adjustments */
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    margin-right: 15px; /* Smaller right margin on smaller screens */
+  }
 }
 
-.carousel-wrapper {
-  display: flex;
-  width: 100%;
-  position: relative;
+/* Add this CSS to your existing stylesheet (App.css or Home.css) */
+@media (max-width: 768px) {
+  img {
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
 }
 
-.carousel-content-wrapper {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+
+/* Styles specific to mobile toggle */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1); /* Toggler icon border color */
 }
 
-.carousel-content {
-  display: flex;
-  transition: all 250ms linear;
-  -ms-overflow-style: none; /* hide scrollbar in IE and Edge */
-  scrollbar-width: none; /* hide scrollbar in Firefox */
+/* White background when navbar is expanded on mobile */
+.navbar-collapse.collapse.show {
+  width: 100%; /* Ensure full width coverage */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Shadow for depth */
+  margin-top:15px;
 }
 
-/* hide scrollbar in webkit browser */
-.carousel-content::-webkit-scrollbar,
-.carousel-content::-webkit-scrollbar {
-  display: none;
+
+/* ------------ */
+/* MISSION CSS */
+/* ------------ */
+.container-mission {
+  padding: 20px; /* Adequate padding around the content */
+  background-color: #1e191a; /* Set a fixed background color */
+  color: white;
+  height:50vh;
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: center; /* Centers content vertically */
+  text-align: center; /* Centers text horizontally */
+}
+.container-mission h1{
+ font-weight: bold; 
 }
 
-.carousel-content > * {
-  width: 100%;
-  flex-shrink: 0;
-  flex-grow: 1;
-}
 
-/* New Styles Here */
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
-.wrapper {
-  width: 100%;
-  height: 100vh;
-}
-
-.content {
-  max-width: 800px;
-}
-
-section {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.one {
-  background-color: #1e191a;
-}
-
-.fade-in {
-  position: relative;
-  z-index: 0;
-  opacity: 1;
-  animation: fadeIn 2.5s ease-in-out;
+.container-mission h1, .container-mission p {
+  opacity: 0; /* Start elements fully transparent */
+  animation: fadeIn 3s ease-out forwards; /* Apply the fade-in animation */
 }
 
 @keyframes fadeIn {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
 
-h1 {
-  font-size: 100px;
-  margin: 0;
-  color: white;
+.pt-navbar {
+  padding-top: 100px; /* Adjust based on your navbar's height */
 }
 
-.subheading {
-  font-size: 24px;
-  color: white;
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .container-mission .display-6 {
+    font-size: 1.75rem; /* Adjust font size for mobile devices */
+  }
+
+  .container-mission .lead {
+    font-size: 1rem; /* Adjust paragraph text size for readability on mobile */
+  }
+
+  .pt-navbar {
+    padding-top: 150px; /* Slightly smaller padding on mobile devices if navbar is smaller */
+  }
 }
 
-.one form {
-  background-color: white;
-  padding: 35px 35px 35px 35px;
-  border-radius: 5px 5px 5px 5px;
-  box-shadow: 4px 0px 18px 18px #000000;
-  text-align: left;
+@media (max-width: 576px) {
+  .container-mission .content {
+    padding: 15px; /* Less padding on the smallest screens */
+  }
 }
 
-.one form h2 {
-  font-size: 50px;
-  text-align: center;
+/* ------------ */
+/* INSTALLATION CSS */
+/* ------------ */
+/* General styles for the installation section */
+.container-fluid {
+  padding: 0; /* Removes padding from the container */
 }
 
-.one form p {
-  font-size: 24px;
-  text-align: center;
-}
-
-.one label {
-  font-size: 22px;
-  padding-right: 10px;
-  text-align: right;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  margin-top: 18px;
-}
-
-.one input {
-  height: 25px;
-  width: 300px;
-  margin-top: 18px;
-  margin-bottom: 18px;
-}
-
-.one textarea {
+.installation-left, .installation-right {
   display: flex;
-  margin-top: 12px;
-  width: 100%;
-  height: 100px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height:42vh;
 }
 
-.one button {
-  width: 25%;
-  align-items: right;
-  height: 28px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-style: italic;
+/* Styles for the left column with green background */
+.installation-left {
+  background-color: #2a572c; /* Green background */
+  color: white; /* White text for better readability on green */
+  text-align: center; /* Center the text for aesthetics */
+}
+
+/* Styles for the right column with white background */
+.installation-right {
+  background-color: white; /* White background */
+  color: black; /* Black text for contrast */
+  text-align: left; /* Normal text alignment for detailed content */
+}
+.installation-right h1{
   font-weight: bold;
 }
 
-/* Section TWO and THREE */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 15px;
-}
-
-.item {
-  margin-top: calc(48%);
-  padding: 25px;
-}
-
-.two {
-  background: linear-gradient(-99deg, #ffffff 50%, #086c44 calc(50% + 1px));
-  height: 100vh;
-  width: 100vw;
-}
-
-.two h1 {
-  color: #ffffff;
-  font-size: 80px;
-}
-
-.two p.subheading {
-  color: #ffffff;
-}
-
-.three {
-  background: linear-gradient(99deg, #086c44 50%, #ffffff calc(50% + 1px));
-  height: 100vh;
-  width: 100vw;
-}
-
-.three h1 {
-  color: #1e191a;
-  font-size: 80px;
-}
-
-.three p.subheading {
-  color: #1e191a;
-}
-
-.from-left {
-  grid-column: 2/3;
-  transform: translateX(-50%);
-}
-
-.from-right {
-  grid-column: 3 /4;
-  transform: translateX(50%);
-}
-
-.from-left-slide {
-  animation-duration: 1.5s;
-  animation-name: from-left;
-  opacity: 1;
-  transform: translateX(0%);
-}
-
-.from-right-slide {
-  animation: from-right 1.5s ease-in-out;
-  opacity: 1;
-  transform: translateX(0%);
-}
-
-@keyframes from-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
+/* Ensuring mobile responsiveness */
+@media (max-width: 768px) {
+  .installation-left, .installation-right {
+    text-align: center; /* Center text on smaller screens */
+    padding: 15px; /* Slightly reduced padding on mobile devices */
   }
 }
 
-@keyframes from-right {
-  0% {
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
+/* Optional: Additional mobile-specific adjustments */
+.installation-right h1, .installation-right .subheading {
+  font-size: smaller; /* Adjust font size on smaller screens for readability */
 }
 
-/* FOOTER STYLING */
 
-footer {
-  position: fixed;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  background-color: #1e191a;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
+/* ------------ */
+/* CAROUSEL CSS */
+/* ------------ */
+.carousel-slider {
+  padding: 0 15px; /* Add padding to the slider */
 }
+
+.carousel-image {
+  max-width: auto;
+  height: 38vh;
+  margin: 0 auto; /* Center images horizontally */
+  padding: 0px;
+}
+
+/* Add !important to the arrow styles */
+.slick-prev,
+.slick-next {
+  display: none; /* Hide arrows by default */
+  position: absolute; /* Position arrows absolutely */
+  top: 50%; /* Vertically center arrows */
+  transform: translateY(-50%); /* Offset arrows vertically */
+  z-index: 1; /* Ensure arrows are above images */
+  font-size: 30px; /* Increase arrow size */
+}
+
+/* Show arrows on hover */
+.carousel-slider:hover .slick-prev,
+.carousel-slider:hover .slick-next {
+  display: block;
+}
+
+/* Hide the dots */
+.slick-dots {
+  display: none !important;
+}
+
+/* Position the arrows */
+.slick-prev {
+  left: 15% !important; /* Adjust distance from left side */
+}
+
+.slick-next {
+  right: 15% !important; /* Adjust distance from left side */
+}
+

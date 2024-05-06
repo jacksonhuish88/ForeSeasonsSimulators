@@ -1,47 +1,60 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
 import "../../App.css";
 import "../Home.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import car1 from "../components/img/car_1.jpg";
+import car2 from "../components/img/car_2.jpg";
+import car3 from "../components/img/car_3.jpg";
 
-function Included() {
-  const { ref: from_left, inView: from_leftIsVisible } = useInView();
-  const { ref: from_right, inView: from_rightIsVisible } = useInView();
-  const styles = {
-    fromLeft: "from-left",
-    fromLeftSlide: "from-left-slide",
-    fromRight: "from-right",
-    fromRightSlide: "from-right-slide",
-    item: "item",
+function Installation() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    responsive: [
+      {
+        breakpoint: 768, // Adjust this breakpoint as needed for your design
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
+
   return (
-    <>
-      <section className="grid-container three">
-        <div
-          ref={from_left}
-          className={`${(styles.fromLeft, styles.item)} ${
-            from_leftIsVisible ? styles.fromLeftSlide : ""
-          }`}
-        >
-          <h1>Carousel of Images Goes Here</h1>
+    <section className="container-fluid">
+      <div className="row">
+        <div className="col-12 col-md-5 installation-left">
+          <div className="text-center">
+            <Slider {...settings} className="carousel-slider">
+              <div><img src={car1} alt="Car 1" className="carousel-image"/></div>
+              <div><img src={car2} alt="Car 2" className="carousel-image"/></div>
+              <div><img src={car3} alt="Car 3" className="carousel-image"/></div>
+            </Slider>
+          </div>
         </div>
-        <div
-          ref={from_right}
-          className={`${(styles.fromRight, styles.item)} ${
-            from_rightIsVisible ? styles.fromRightSlide : ""
-          }`}
-        >
-          <h1>What's Included</h1>
-          <p className="subheading">
-            We have partnered with manufactueres and local distributors to keep
-            our prices low so that we can pass that savings on to you. The full
-            set up includes a black out enclosure, high impact screen, locally
-            sources turf and hitting mat, short throw 1080p projector, high
-            speed gaming computer, launch monitor and optional putting holes.
-          </p>
+        <div className="col-12 col-md-7 installation-right">
+          <div className="text-center">
+            <h1 style={{ fontSize: '36px' }}>What's Included</h1>
+            <p style={{ fontSize: '18px' }}>
+              We have partnered with manufacturers and local distributors to keep
+              our prices low so that we can pass that savings on to you. The full
+              setup includes a blackout enclosure, high impact screen, locally
+              sourced turf and hitting mat, short throw 1080p projector, high
+              speed gaming computer, launch monitor, and optional putting holes.
+            </p>
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
-export default Included;
+export default Installation;

@@ -1,7 +1,6 @@
 import React from "react";
 import "../../App.css";
 import "../Home.css";
-import "../../bootstrap-grid.css";
 
 function getQuote() {
   return (
