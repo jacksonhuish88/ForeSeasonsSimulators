@@ -61,4 +61,8 @@ list-style-type: none;
   padding-right: 15px;
   padding-left: 0px;
 }
+
+.row{
+  margin:0px 0px 0px 0px !important;
+}
 }
