@@ -28,11 +28,11 @@ const Footer = () => {
                     <div className="col-md-2 mb-3">
                         <h5>Our Simulators</h5>
                         <ul className="list-unstyled">
-                            <li><a href="#Home">About</a></li>
+                            <li><a href="#mission">Home</a></li>
                             <li><a href="#installation">Installation</a></li>
                             <li><a href="#materials">Materials</a></li>
-                            <li><a href="#Home">About</a></li>
-                            <li><a href="#Home">Contact</a></li>
+                            <li><a href="#mission">About</a></li>
+                            <li><a href="#mission">Contact</a></li>
                         </ul>
                     </div>
 
@@ -42,7 +42,7 @@ const Footer = () => {
                         <ul className="list-unstyled">
                             <li><a href="mailto:foreseasonssimulators@gmail.com"><i className="fa fa-envelope me-2"></i>foreseasonssimulators@gmail.com</a></li>
                             <li><a href="tel:123-123-1234"><i className="fa fa-phone me-2"></i>123-123-1234</a></li>
-                            <li><a href="https://www.instagram.com/fore.seasons.golf" target="_blank"><i className="fab fa-instagram me-2"></i>Instagram</a></li>
+                            <li><a href="https://www.instagram.com/fore.seasons.golf"><i className="fab fa-instagram me-2"></i>Instagram</a></li>
                         </ul>
                     </div>
                 </div>
