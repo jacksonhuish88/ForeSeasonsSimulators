@@ -39,6 +39,10 @@ list-style-type: none;
   padding-right: 100px;
 }
 
+.row{
+  margin:0px 0px 0px 0px !important;
+}
+
 @media (max-width: 768px) {
 .faq h1 {
       font-size: 1.75rem !important; /* Adjust the font size for mobile screens */
@@ -62,7 +66,4 @@ list-style-type: none;
   padding-left: 0px;
 }
 
-.row{
-  margin:0px 0px 0px 0px !important;
-}
 }
