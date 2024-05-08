@@ -1,65 +1,50 @@
 import React from 'react';
 import "../../App.css";
 import "../Home.css";
+import "./css/footer.css";
 import Logo from "../Logo.png";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="text-white pt-4 pb-4">
             <div className="container">
-                <div className="row">
-                    {/* Company Info */}
-                    <div className="col-md-3">
-                      <div className="text-center">
-                          <img src={Logo} alt="Logo" style={{ width: "auto", height: "75px", marginTop: "5px" }} />
-                      </div>
-                      <div className="text-center">
-                          <a href="#Home" className="btn btn-primary" style={{ backgroundColor: '#2a572c', border:'none',marginTop:'25px' }}>Leave a Review!</a>
-                      </div>
-                  </div>
+                <div className="row text-center text-md-left">
+                    {/* Logo and Review Button */}
+                    <div className="col-12 col-md-3 mb-3">
+                        <div>
+                            <img src={Logo} alt="Logo" className="img-fluid mb-2" style={{ maxHeight: "75px" }} />
+                        </div>
+                        <div>
+                            <a href="#Home" className="btn btn-primary mt-2 mt-md-0" style={{ backgroundColor: '#2a572c', border: 'none' }}>Leave a Review!</a>
+                        </div>
+                    </div>
 
-
-                    {/* Company Info */}
-                      <div className="col-md-3 footer-about">
+                    {/* About Company */}
+                    <div className="col-md-3 mb-3">
                         <p>Let us handle the at-home simulator setup, freeing you up for what truly matters—perfecting that swing and, of course, outdriving your father-in-law. We’ve got your back, on and off the virtual green!</p>
                     </div>
 
-                    {/* Services */}
-                    <div className="col-md-3">
-                        <h5 className="foot-overview-title">Our Simulators</h5>
+                    {/* Our Simulators */}
+                    <div className="col-md-2 mb-3">
+                        <h5>Our Simulators</h5>
                         <ul className="list-unstyled">
                             <li><a href="#Home">About</a></li>
-                            <li><a href="#Home">Installation</a></li>
-                            <li><a href="#Home">Included</a></li>
+                            <li><a href="#installation">Installation</a></li>
+                            <li><a href="#materials">Materials</a></li>
+                            <li><a href="#Home">About</a></li>
+                            <li><a href="#Home">Contact</a></li>
                         </ul>
                     </div>
 
                     {/* Contact Info */}
-                    <div className="col-md-3">
-                      <h5 className="foot-overview-title">Contact</h5>
-                      <ul className="list-unstyled">
-                            <li>                      
-                              <div className="footer-brand d-flex align-items-center">
-                                <i style={{ fontSize: '1.5rem' }} className="fa-solid fa-sm fa-envelope text-white me-2"></i>
-                                <p style={{ margin: 0 }}><a href="mailto:foreseasonssimulators@gmail.com">foreseasonssimulators@gmail.com</a></p>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="footer-brand d-flex align-items-center">
-                                <i style={{ fontSize: '1.5rem' }} className="fa-solid fa-sm fa-phone text-white me-2"></i>
-                                <p style={{ margin: 0 }}><a href="tel:">123-123-1234</a></p>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="footer-brand d-flex align-items-center">
-                                  <a href="https://www.instagram.com/fore.seasons.golf" target="_blank">
-                                      <i className="fab fa-instagram text-white fa-xl me-2"></i>
-                                  </a>
-                                  <p style={{ margin: 0 }}>Instagram</p>
-                              </div>
-                            </li>
-                      </ul>
-                  </div>
+                    <div className="col-md-4 mb-3">
+                        <h5>Contact</h5>
+                        <ul className="list-unstyled">
+                            <li><a href="mailto:foreseasonssimulators@gmail.com"><i className="fa fa-envelope me-2"></i>foreseasonssimulators@gmail.com</a></li>
+                            <li><a href="tel:123-123-1234"><i className="fa fa-phone me-2"></i>123-123-1234</a></li>
+                            <li><a href="https://www.instagram.com/fore.seasons.golf" target="_blank"><i className="fab fa-instagram me-2"></i>Instagram</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>

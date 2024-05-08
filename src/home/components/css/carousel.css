@@ -1,0 +1,50 @@
+/* ------------ */
+/* CAROUSEL CSS */
+/* ------------ */
+.carousel-slider {
+    padding: 0 15px; /* Add padding to the slider */
+  }
+  
+  .carousel-image {
+    max-width: auto;
+    max-height: 38vh;
+    margin: 0 auto; /* Center images horizontally */
+    padding: 0px;
+  }
+  
+  /* Add !important to the arrow styles */
+  .slick-prev,
+  .slick-next {
+    display: none; /* Hide arrows by default */
+    position: absolute; /* Position arrows absolutely */
+    top: 50%; /* Vertically center arrows */
+    transform: translateY(-50%); /* Offset arrows vertically */
+    z-index: 1; /* Ensure arrows are above images */
+    font-size: 30px; /* Increase arrow size */
+  }
+  
+  /* Show arrows on hover */
+  .carousel-slider:hover .slick-prev,
+  .carousel-slider:hover .slick-next {
+    display: block;
+  }
+  
+  /* Hide the dots */
+  .slick-dots {
+    display: none !important;
+  }
+  
+  /* Position the arrows */
+  .slick-prev {
+    left: 15% !important; /* Adjust distance from left side */
+  }
+  
+  .slick-next {
+    right: 15% !important; /* Adjust distance from left side */
+  }
+
+  .carousel-slider p{
+    color:white;
+    font-size: 18px;
+    padding-top:10px;
+  }

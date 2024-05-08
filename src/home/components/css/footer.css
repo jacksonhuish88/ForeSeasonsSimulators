@@ -1,0 +1,30 @@
+/* ------------ */
+/* FOOTER CSS */
+/* ------------ */
+footer {
+    background-color: #1e191a;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer .btn-primary {
+    background-color: #2a572c;
+    border: none;
+}
+
+footer a:hover{
+    color: #496b4c; /* Green color on hover for links */
+}

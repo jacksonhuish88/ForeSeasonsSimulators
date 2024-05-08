@@ -1,40 +1,37 @@
-import React from "react";
-import Logo from "../Logo.png";
-import "../../App.css";
-import "../Home.css";
+import React from 'react';
+import "./css/navbar.css";
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Logo from '../Logo.png'; // Import your logo
 
 function Navigation() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div className="container-fluid">
-        {/* Logo */}
-        <a className="navbar-brand" href="#Home">
-          <img src={Logo} alt="Logo" style={{ width: "auto", height: "75px" }} />
-        </a>
-
-        {/* Hamburger menu for mobile view */}
-        <button 
-          className="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNavAltMarkup" 
-          aria-controls="navbarNavAltMarkup" 
-          aria-expanded="false" 
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        {/* Navigation links */}
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-item nav-link" href="#Home">Simulators</a>
-            <a className="nav-item nav-link" href="#Home">Quotes</a>
-            <a className="nav-item nav-link" href="#Home">About Us</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <Navbar variant="dark" expand="md" sticky="top" className="shadow">
+      <Container fluid>
+        <Navbar.Brand href="#mission">
+          <img
+            src={Logo}
+            height="75" // Set fixed height for consistency
+            alt="Company Logo"
+            className="d-inline-block align-top"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="#mission">Home</Nav.Link>
+            <Nav.Link href="#installation">Installation</Nav.Link>
+            <Nav.Link href="#materials">Materials</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="https://www.instagram.com/yourcompany" aria-label="Instagram">
+              <FontAwesomeIcon icon={faInstagram} size="lg" />
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

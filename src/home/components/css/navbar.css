@@ -1,0 +1,36 @@
+/* NAVBAR CSS */
+.navbar {
+    background-color: #1e191a; /* Dark background for navbar */
+  }
+  
+  .navbar-brand img {
+    height: 75px; /* Fixed height for the logo */
+  }
+  
+  .navbar-nav .nav-link {
+    color: white; /* Ensures nav links are white */
+    margin-right: 25px; /* Right margin for spacing between links */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: rgb(53, 129, 58); /* Green color on hover for links */
+  }
+  
+  /* Media query for mobile adjustments */
+  @media (max-width: 992px) {
+    .navbar-nav .nav-link {
+      margin-right: 15px; /* Smaller right margin on smaller screens */
+    }
+  }
+  
+  /* Styles specific to mobile toggle */
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Toggler icon border color */
+  }
+  
+  /* White background when navbar is expanded on mobile */
+  .navbar-collapse.collapse.show {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Shadow for depth */
+    background-color: #1e191a; /* Consistent background color */
+  }
+  
