@@ -1,13 +1,20 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./home/Home";
-import "bootstrap/dist/css/bootstrap.min.css";  // Import Bootstrap CSS
+import Home from "./pages/Home";
+import AboutUs from "./pages/About-Page";  // Assuming you have an AboutPage component
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <Home></Home>
-    </div>
+    <Router basename="/ForeSeasonsSimulators">
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

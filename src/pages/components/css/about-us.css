@@ -1,0 +1,36 @@
+.about-us {
+    padding: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f0f0;
+  }
+
+.about-us p{
+  font-size:24px;
+  padding-right:150px;
+  padding-left:150px
+}
+
+@media (max-width: 768px) {
+  .about-us{
+    height: 60vh;
+  }
+  .about-us h1 {
+      font-size: 1.75rem; /* Larger on small devices */
+  }
+
+  .about-us p {
+      font-size: 1rem;
+      padding-left:0px;
+      padding-right:0px;
+  }
+}
+  
+.about-us-paragraph {
+  padding: 0 25px; /* Adjust as needed */
+}
+
+@media (min-width: 768px) {
+  .about-us-paragraph {
+    padding: 0 25px; /* Adjust as needed */
+  }
+}

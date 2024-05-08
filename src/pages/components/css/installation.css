@@ -28,7 +28,7 @@
 }
 
 .installation-section li {
-  font-size: 20rem; /* Adjust the font size for mobile screens */
+  font-size: 20px; /* Adjust the font size for mobile screens */
 }
 
   @media (max-width: 768px) {
